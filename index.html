@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LeetMetric</h1>
+
+        <button id="theme-toggle">🌙 Dark Mode</button>
+
+        <div class="user-container">
+            <p id="usernameId">Enter your LeetCode username</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="e.g. johndoe123" id="user-input">
+                <button id="search-btn">Search</button>
+                <button id="refresh-btn">Refresh</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="easy-progress circle">
+                        <span id="easy-label" class="progress-label"></span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="medium-progress circle">
+                        <span id="medium-label" class="progress-label"></span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="hard-progress circle">
+                        <span id="hard-label" class="progress-label"></span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-stats">
+                <span class="badge easy">Easy: <span id="easy-badge">0</span></span>
+                <span class="badge medium">Medium: <span id="medium-badge">0</span></span>
+                <span class="badge hard">Hard: <span id="hard-badge">0</span></span>
+            </div>
+
+            <div class="stats-card">
+                <div class="stat-item">
+                    <strong>Total Solved:</strong> <span id="total-solved">0</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Success Rate:</strong> <span id="success-rate">0%</span>
+                </div>
+                <div class="stat-item" id="ranking-container" style="display: none;">
+                    <strong>Ranking:</strong> <span id="ranking-label"></span>
+                </div>
+            </div>
+
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
