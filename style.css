@@ -186,6 +186,18 @@ body.light .stat-item {
 .medium { background-color: #f0ad4e; }
 .hard { background-color: #d9534f; }
 
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 6px;   /* optional: removes round edges so it looks natural */
+    }
+    body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 @media (max-width: 500px) {
     .circle {
         width: 90px;
